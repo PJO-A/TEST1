@@ -1,0 +1,26 @@
+﻿FUNCTION "fc_TEST_BLOCK" : Void
+TITLE = MOJ_BLOCK_TESTOWY
+{ S7_Optimized_Access := 'TRUE' }
+AUTHOR : PJO
+FAMILY : BLOKI_TESTOWE
+VERSION : 0.1
+//ZOBACZYMY TEGO EFEKT
+   VAR_INPUT 
+      A : Bool;
+      B : Bool;
+      C : Bool;
+   END_VAR
+
+
+BEGIN
+	REGION BLOCK_TESTOWY
+	    IF #A THEN
+	        #B := TRUE;
+	    // ELSE
+	    //     #B := FALSE;
+	    //     /dodalem komentarz
+	    END_IF;
+	END_REGION
+	
+END_FUNCTION
+
