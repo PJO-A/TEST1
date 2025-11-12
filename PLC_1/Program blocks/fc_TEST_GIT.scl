@@ -1,0 +1,15 @@
+﻿FUNCTION "fc_TEST_GIT" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_IN_OUT 
+      a : Bool;
+   END_VAR
+
+
+BEGIN
+	IF #a THEN
+	    #a := NOT #a;
+	END_IF;
+	
+END_FUNCTION
+

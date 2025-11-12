@@ -60,30 +60,49 @@
         <Component Name="C" />
       </Symbol>
     </Access>
-    <Call UId="24">
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="Data_block_1" />
+        <Component Name="A" />
+      </Symbol>
+    </Access>
+    <Call UId="25">
       <CallInfo Name="fc_TEST_BLOCK" BlockType="FC">
         <Parameter Name="A" Section="Input" Type="Bool" />
         <Parameter Name="B" Section="Input" Type="Bool" />
         <Parameter Name="C" Section="Input" Type="Bool" />
       </CallInfo>
     </Call>
+    <Call UId="26">
+      <CallInfo Name="fc_TEST_GIT" BlockType="FC">
+        <Parameter Name="a" Section="InOut" Type="Bool" />
+      </CallInfo>
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="25">
-      <Powerrail />
-      <NameCon UId="24" Name="en" />
-    </Wire>
-    <Wire UId="26">
-      <IdentCon UId="21" />
-      <NameCon UId="24" Name="A" />
-    </Wire>
     <Wire UId="27">
-      <IdentCon UId="22" />
-      <NameCon UId="24" Name="B" />
+      <Powerrail />
+      <NameCon UId="25" Name="en" />
     </Wire>
     <Wire UId="28">
+      <IdentCon UId="21" />
+      <NameCon UId="25" Name="A" />
+    </Wire>
+    <Wire UId="29">
+      <IdentCon UId="22" />
+      <NameCon UId="25" Name="B" />
+    </Wire>
+    <Wire UId="30">
       <IdentCon UId="23" />
-      <NameCon UId="24" Name="C" />
+      <NameCon UId="25" Name="C" />
+    </Wire>
+    <Wire UId="31">
+      <NameCon UId="25" Name="eno" />
+      <NameCon UId="26" Name="en" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="24" />
+      <NameCon UId="26" Name="a" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
