@@ -66,43 +66,73 @@
         <Component Name="A" />
       </Symbol>
     </Access>
-    <Call UId="25">
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="Data_block_1" />
+        <Component Name="A" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="Data_block_1" />
+        <Component Name="A" />
+      </Symbol>
+    </Access>
+    <Call UId="27">
       <CallInfo Name="fc_TEST_BLOCK" BlockType="FC">
         <Parameter Name="A" Section="Input" Type="Bool" />
         <Parameter Name="B" Section="Input" Type="Bool" />
         <Parameter Name="C" Section="Input" Type="Bool" />
       </CallInfo>
     </Call>
-    <Call UId="26">
+    <Call UId="28">
       <CallInfo Name="fc_TEST_GIT" BlockType="FC">
         <Parameter Name="a" Section="InOut" Type="Bool" />
       </CallInfo>
     </Call>
+    <Call UId="29">
+      <CallInfo Name="fc" BlockType="FC">
+        <Parameter Name="a" Section="Input" Type="Bool" />
+        <Parameter Name="Ret_Val" Section="Return" Type="Bool" />
+      </CallInfo>
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="27">
-      <Powerrail />
-      <NameCon UId="25" Name="en" />
-    </Wire>
-    <Wire UId="28">
-      <IdentCon UId="21" />
-      <NameCon UId="25" Name="A" />
-    </Wire>
-    <Wire UId="29">
-      <IdentCon UId="22" />
-      <NameCon UId="25" Name="B" />
-    </Wire>
     <Wire UId="30">
-      <IdentCon UId="23" />
-      <NameCon UId="25" Name="C" />
+      <Powerrail />
+      <NameCon UId="27" Name="en" />
     </Wire>
     <Wire UId="31">
-      <NameCon UId="25" Name="eno" />
-      <NameCon UId="26" Name="en" />
+      <IdentCon UId="21" />
+      <NameCon UId="27" Name="A" />
     </Wire>
     <Wire UId="32">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="B" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="C" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="27" Name="eno" />
+      <NameCon UId="28" Name="en" />
+    </Wire>
+    <Wire UId="35">
       <IdentCon UId="24" />
-      <NameCon UId="26" Name="a" />
+      <NameCon UId="28" Name="a" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="28" Name="eno" />
+      <NameCon UId="29" Name="en" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="25" />
+      <NameCon UId="29" Name="a" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="29" Name="Ret_Val" />
+      <IdentCon UId="26" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
